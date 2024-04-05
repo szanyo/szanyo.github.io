@@ -1,9 +1,60 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+        .construction-icon {
+            font-size: 100px;
+            color: #FF5733;
+            margin-bottom: 20px;
+        }
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+        }
+        h1.dark-mode, p.dark-mode {
+            color: #ddd;
+        }
+        .construction-icon.dark-mode {
+            color: #FFA07A;
+        }
+    </style>
+</head>
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-</body>
+    <div class="container">
+        <div class="construction-icon">🚧</div>
+        <h1>Under Construction</h1>
+        <p>We're currently working on something awesome. Stay tuned!</p>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
 
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
 </html>
