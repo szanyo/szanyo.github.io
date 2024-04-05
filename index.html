@@ -13,7 +13,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            color: #333; /* Default text color */
+            color: #333;
             background-color: #f0f0f0;
         }
         .container {
@@ -27,7 +27,7 @@
         /* Dark mode styles */
         body.dark-mode {
             background-color: #333;
-            color: #ddd; /* Text color in dark mode */
+            color: #ddd;
         }
         .dark-mode .construction-icon {
             color: #FFA07A;
@@ -40,7 +40,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;
         }
     
         .construction-icon {
@@ -48,23 +47,49 @@
         }
     
         h1 {
-            margin: 0.5rem 0;
+            margin: 1rem 0 0.5rem;
+            text-align: center;
         }
     
         p {
-            margin: 0.25rem auto;
-            width: 75%; /* Set paragraph width to 75% */
+            margin: 0.5rem auto; 
+            width: 75%;
+            line-height: 1.6;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        a {
+            color: #009688;
+            font-weight: bold;
+
+
+        }
+
+        .signature {
+            margin-top: 2rem;
+            font-style: italic;
+            color: #888;
+            text-align: center;
         }
     </style>
     
     <div class="container">
         <div class="construction-icon">🚧</div>
         <h1>Under Construction</h1>
-        <p>We're currently working on something awesome. Stay tuned!</p>
-        <p>Meet [Your Name], a skilled informatics engineer fluent in Python, Java, C, C++, C#, Pascal, and VB. With a passion for problem-solving and a keen eye for detail, [Your Name] thrives in the dynamic world of software development. Their expertise spans a wide range of programming languages, allowing them to tackle diverse projects with precision and efficiency.</p>
-        <p>As an informatics engineer, [Your Name] is adept at designing and implementing robust software solutions tailored to meet specific needs. Whether it's developing cutting-edge applications, optimizing algorithms, or troubleshooting complex systems, they approach each challenge with creativity and technical expertise.</p>
-        <p>Beyond their technical skills, [Your Name] is known for their dedication to continuous learning and innovation. They stay abreast of the latest advancements in technology, constantly seeking ways to enhance their craft and deliver exceptional results.</p>
-        <p>With a solid foundation in multiple programming languages and a passion for pushing the boundaries of what's possible, [Your Name] is poised to make a significant impact in the field of informatics engineering.</p>
+        <h2>We're currently working on something awesome. Stay tuned!</h2>
+        <p></p> <!-- This is the empty space separating the sections -->
+        <h3>Brief introduction of creator</h3>
+        <p>Hello, I'm Benedek Szanyó, a passionate informatics engineer specializing in Information Technology and Communications (ITC).</p>
+        <p>I'm currently pursuing my bachelor's degree at Budapest University of Technology and Economics in Hungary.</p>
+        <p>Proficient in Python, Java, C, C++, C#, Pascal, and VB, I thrive in the dynamic realm of software development.</p>
+        <p>Additionally, I'm actively learning about reinforcement learning, machine learning, cloud services, mobile communication, and algorithmic trading.</p>
+        <p>With a keen eye for detail and a dedication to continuous learning, I am committed to delivering robust and efficient solutions tailored to meet specific needs.</p>
+        <p>Stay tuned as I continue to explore and innovate in these exciting areas.</p>
+        <div class="link-container">
+            <a href="https://github.com/szanyo" class="arrow-left">⟶ </a><a href="https://github.com/szanyo">Visit my portfolio</a><a href="https://github.com/szanyo" class="arrow-right"> ⟵</a>
+        </div>
+        <p class="signature">Introduction crafted by Benedek Szanyó with assistance from ChatGPT</p>
     </div>
 
     <script>
