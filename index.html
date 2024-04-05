@@ -9,17 +9,15 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            color: #333; /* Default text color */
+            background-color: #f0f0f0;
         }
         .container {
             text-align: center;
-        }
-        h1, p {
-            color: #333;
         }
         .construction-icon {
             font-size: 100px;
@@ -29,26 +27,50 @@
         /* Dark mode styles */
         body.dark-mode {
             background-color: #333;
+            color: #ddd; /* Text color in dark mode */
         }
-        h1.dark-mode, p.dark-mode {
-            color: #ddd;
-        }
-        .construction-icon.dark-mode {
+        .dark-mode .construction-icon {
             color: #FFA07A;
         }
     </style>
 </head>
 <body>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .construction-icon {
+            font-size: 3rem;
+        }
+    
+        h1 {
+            margin: 0.5rem 0;
+        }
+    
+        p {
+            margin: 0.25rem auto;
+            width: 75%; /* Set paragraph width to 75% */
+        }
+    </style>
+    
     <div class="container">
         <div class="construction-icon">🚧</div>
-        <h1 class="text">Under Construction</h1>
-        <p class="text">We're currently working on something awesome. Stay tuned!</p>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <h1>Under Construction</h1>
+        <p>We're currently working on something awesome. Stay tuned!</p>
+        <p>Meet [Your Name], a skilled informatics engineer fluent in Python, Java, C, C++, C#, Pascal, and VB. With a passion for problem-solving and a keen eye for detail, [Your Name] thrives in the dynamic world of software development. Their expertise spans a wide range of programming languages, allowing them to tackle diverse projects with precision and efficiency.</p>
+        <p>As an informatics engineer, [Your Name] is adept at designing and implementing robust software solutions tailored to meet specific needs. Whether it's developing cutting-edge applications, optimizing algorithms, or troubleshooting complex systems, they approach each challenge with creativity and technical expertise.</p>
+        <p>Beyond their technical skills, [Your Name] is known for their dedication to continuous learning and innovation. They stay abreast of the latest advancements in technology, constantly seeking ways to enhance their craft and deliver exceptional results.</p>
+        <p>With a solid foundation in multiple programming languages and a passion for pushing the boundaries of what's possible, [Your Name] is poised to make a significant impact in the field of informatics engineering.</p>
     </div>
 
     <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
+        // Detect system color mode and set dark mode if applicable
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark-mode');
         }
     </script>
 </body>
